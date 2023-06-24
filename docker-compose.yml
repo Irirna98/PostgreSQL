@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:8.0.18
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgres/data
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: 9mREsvXDs9Gk89Ef
